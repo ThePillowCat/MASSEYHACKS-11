@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <h1>Welcome to the Teacher Dashboard, <%= teacherN %>!</h1>
+    <div class="button-group">
+        <a href="/logout" class="btn btn-danger">Logout</a>
+        <h1>Class Code: <%= teacherClassCode %></h1>
+    </div>
+    <!-- Bulleted list of students -->
+    <h2>Students in your class:</h2>
+    <ul>
+        <% students.forEach(function(student) { %>
+            <li><%= student.row.replace(/[()]/g, "").replace(",", " ") %></li>
+        <% }); %>
+    </ul>
+</div>
+
+<%- include('partials/footer') %>
