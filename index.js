@@ -166,9 +166,7 @@ app.get("/teacher/dashboard", async (req, res) => {
     values = [classCodeResult.rows[0].class_code];
 
     let studentNameResult = await db.query(querry, values);
-    console.log("------------------------------------");
-    console.log(studentNameResult.rows);
-    console.log("---------------------------------");
+
     res.render("teacherDashboard.ejs", { teacherN: teacherName, teacherClassCode: classCodeResult.rows[0].class_code, students: studentNameResult.rows});
   }
   else {
