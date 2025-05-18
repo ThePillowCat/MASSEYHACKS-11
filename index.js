@@ -318,7 +318,7 @@ app.post('/unityStudentLogin', (req, res) => {
 
   console.log(username, password);
 
-  db.query(`SELECT * FROM studentusers WHERE username = $1`, [username], (err, result) => {
+  db.query(`SELECT * FROM studentusers WHERE username = $1`, [username], async (err, result) => {
     if (err) {
       console.error("Error querying data:", err);
       res.status(500).send("Error querying data");
@@ -326,9 +326,10 @@ app.post('/unityStudentLogin', (req, res) => {
       if (result.rows.length > 0) {
         const user = result.rows[0];
 
-        bcrypt.compare(password, user.password, (err, match) => {
+        bcrypt.compare(password, user.password, async (err, match) => {
           if (match) {
-            res.json({ success: true, username: username, name: result.rows[0].first_name + " " + result.rows[0].last_name, assigned: result.rows[0].assigned});
+            const newResult = await db.query(`SELECT assigned FROM teacherusers WHERE class_code = $1`, [user.class_code]);
+            res.json({ success: true, username: username, name: result.rows[0].first_name + " " + result.rows[0].last_name, assigned: newResult.rows[0].assigned});
           } else {
             res.status(401).send("Invalid credentials");
           }
