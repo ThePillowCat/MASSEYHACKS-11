@@ -14,12 +14,13 @@ let studentName = "";
 let clientUsername = "";
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json())
 
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "postgres",
-  password: "aayan",
+  password: "Willie_123!",
   port: 5432,
 });
 db.connect();
@@ -34,8 +35,8 @@ app.post("/teacher/register", async (req, res) => {
   const password = req.body.password;
   const name = req.body.name;
   const hashedPassword = await bcrypt.hash(password, saltRounds);
-  const query = `INSERT INTO teacherusers (username, password, name) VALUES ($1, $2, $3)`;
-  const values = [username, hashedPassword, name];
+  const query = `INSERT INTO teacherusers (username, password, name, assigned) VALUES ($1, $2, $3, $4)`;
+  const values = [username, hashedPassword, name, "0,0"];
 
   db.query(query, values, (err, result) => {
     if (err) {
@@ -172,7 +173,6 @@ app.get("/teacher/dashboard", async (req, res) => {
 
     query = "SELECT assigned FROM teacherusers WHERE username = $1";
     values = [clientUsername];
-    "1,23,3"
     const assignmentsResult = await db.query(query, values);
     console.log(assignmentsResult);
     const intArray = assignmentsResult.rows[0].assigned.split(',').map(value => {
@@ -306,6 +306,39 @@ app.post("/teacher/updateAssignments" , async (req, res) => {
   //     res.redirect("/teacher/dashboard");
   //   }
   // });
+});
+
+app.post('/unityStudentLogin', async (req, res) => {
+  const username = req.body.username;
+  const password = req.body.password;
+
+  const query = `SELECT * FROM studentusers WHERE username = $1`;
+  const values = ["noah@gmail.com"];
+
+  await db.query(query, values, (err, result) => {
+    if (err) {
+      console.error("Error querying data:", err);
+      res.status(500).send("Error querying data");
+    } else {
+      console.log(result.rows);
+      if (result.rows.length > 0) {
+        const user = result.rows[0];
+
+        bcrypt.compare(password, user.password, (err, match) => {
+          if (match) {
+            // studentName = user.first_name + " " + user.last_name;
+            // clientUsername = username;
+            res.json({ success: true, message: "Login successful"});
+            console.log("worked")
+          } else {
+            res.status(401).send("Invalid credentials");
+          }
+        });
+      } else {
+        res.json({ success: false, message: "Invalid credentials" });
+      }
+    }
+  });
 });
 
 app.listen(port, () => {

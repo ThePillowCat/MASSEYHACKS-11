@@ -48,7 +48,7 @@
                                             <button class="btn btn-outline-primary" type="button"
                                                 onclick="changeCount('pm', -1)">-</button>
                                             <input type="text" id="pmCount" name="projAssign"
-                                                class="form-control text-center mx-2" value="5" style="max-width: 60px;"
+                                                class="form-control text-center mx-2" value="<%= numProj %>" style="max-width: 60px;"
                                                 readonly>
                                             <button class="btn btn-outline-primary" type="button"
                                                 onclick="changeCount('pm', 1)">+</button>
@@ -65,7 +65,7 @@
                                             <button class="btn btn-outline-success" type="button"
                                                 onclick="changeCount('epe', -1)">-</button>
                                             <input type="text" id="epeCount" name="epeAssign"
-                                                class="form-control text-center mx-2" value="0" style="max-width: 60px;"
+                                                class="form-control text-center mx-2" value="<%= numEPE %>" style="max-width: 60px;"
                                                 readonly>
                                             <button class="btn btn-outline-success" type="button"
                                                 onclick="changeCount('epe', 1)">+</button>
