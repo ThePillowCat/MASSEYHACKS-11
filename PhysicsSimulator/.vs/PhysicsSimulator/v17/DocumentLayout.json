@@ -1,0 +1,278 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aayan\\PhysicsSimulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|c:\\users\\aayan\\physicssimulator\\assets\\scitps\\equestionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\equestionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|c:\\users\\aayan\\physicssimulator\\assets\\scitps\\questionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\questionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\physicsquestiongenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\physicsquestiongenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\electricfieldquestiongenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\electricfieldquestiongenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\projectilequestionsso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\projectilequestionsso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\electricfieldquestionsso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\electricfieldquestionsso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\arrowonmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\arrowonmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\rangearrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\rangearrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\setrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\setrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\gravity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\gravity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\textbroadcast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\textbroadcast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\projectilemotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\projectilemotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\cameraswitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\cameraswitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\buttondisablerestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\buttondisablerestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|C:\\Users\\Aayan\\PhysicsSimulator\\assets\\scitps\\textslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBE9ED8-D27C-B358-B8E3-633C82681D5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scitps\\textslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EQuestionsUI.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\EQuestionsUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\EQuestionsUI.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\EQuestionsUI.cs",
+              "RelativeToolTip": "Assets\\Scitps\\EQuestionsUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:32:33.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ElectricFieldQuestiongenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ElectricFieldQuestiongenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\ElectricFieldQuestiongenerator.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ElectricFieldQuestiongenerator.cs",
+              "RelativeToolTip": "Assets\\Scitps\\ElectricFieldQuestiongenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:25:40.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ElectricFieldQuestionsSO.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ElectricFieldQuestionsSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\ElectricFieldQuestionsSO.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ElectricFieldQuestionsSO.cs",
+              "RelativeToolTip": "Assets\\Scitps\\ElectricFieldQuestionsSO.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T13:55:57.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RangeArrow.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\RangeArrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\RangeArrow.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\RangeArrow.cs",
+              "RelativeToolTip": "Assets\\Scitps\\RangeArrow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T07:53:57.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArrowOnMove.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ArrowOnMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\ArrowOnMove.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ArrowOnMove.cs",
+              "RelativeToolTip": "Assets\\Scitps\\ArrowOnMove.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAB0AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T07:10:51.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectileQuestionsSO.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ProjectileQuestionsSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\ProjectileQuestionsSO.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ProjectileQuestionsSO.cs",
+              "RelativeToolTip": "Assets\\Scitps\\ProjectileQuestionsSO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T06:58:17.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuestionsUI.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\QuestionsUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\QuestionsUI.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\QuestionsUI.cs",
+              "RelativeToolTip": "Assets\\Scitps\\QuestionsUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T05:57:07.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PhysicsQuestionGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\PhysicsQuestionGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\PhysicsQuestionGenerator.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\PhysicsQuestionGenerator.cs",
+              "RelativeToolTip": "Assets\\Scitps\\PhysicsQuestionGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T05:11:34.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CameraSwitch.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\CameraSwitch.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\CameraSwitch.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\CameraSwitch.cs",
+              "RelativeToolTip": "Assets\\Scitps\\CameraSwitch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T08:06:05.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "gravity.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\gravity.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\gravity.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\gravity.cs",
+              "RelativeToolTip": "Assets\\Scitps\\gravity.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T00:36:20.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SetRotation.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\SetRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\SetRotation.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\SetRotation.cs",
+              "RelativeToolTip": "Assets\\Scitps\\SetRotation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T18:52:29.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TextBroadcast.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\TextBroadcast.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\TextBroadcast.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\TextBroadcast.cs",
+              "RelativeToolTip": "Assets\\Scitps\\TextBroadcast.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T17:33:32.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectileMotion.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ProjectileMotion.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\ProjectileMotion.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ProjectileMotion.cs",
+              "RelativeToolTip": "Assets\\Scitps\\ProjectileMotion.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwB8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T17:04:41.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\Arrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\Arrow.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\Arrow.cs",
+              "RelativeToolTip": "Assets\\Scitps\\Arrow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T18:31:37.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ButtonDisableRestart.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ButtonDisableRestart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\ButtonDisableRestart.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\ButtonDisableRestart.cs",
+              "RelativeToolTip": "Assets\\Scitps\\ButtonDisableRestart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T07:39:07.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TextSlider.cs",
+              "DocumentMoniker": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\TextSlider.cs",
+              "RelativeDocumentMoniker": "Assets\\Scitps\\TextSlider.cs",
+              "ToolTip": "C:\\Users\\Aayan\\PhysicsSimulator\\Assets\\Scitps\\TextSlider.cs",
+              "RelativeToolTip": "Assets\\Scitps\\TextSlider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:44:16.884Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
