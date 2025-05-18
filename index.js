@@ -14,6 +14,7 @@ let studentName = "";
 let clientUsername = "";
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); 
 app.use(express.json())
 
 const db = new pg.Client({
@@ -308,28 +309,26 @@ app.post("/teacher/updateAssignments" , async (req, res) => {
   // });
 });
 
-app.post('/unityStudentLogin', async (req, res) => {
+app.post('/unityStudentLogin', (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
   const query = `SELECT * FROM studentusers WHERE username = $1`;
-  const values = ["noah@gmail.com"];
+  const values = [username];
 
-  await db.query(query, values, (err, result) => {
+  console.log(username, password);
+
+  db.query(`SELECT * FROM studentusers WHERE username = $1`, [username], (err, result) => {
     if (err) {
       console.error("Error querying data:", err);
       res.status(500).send("Error querying data");
     } else {
-      console.log(result.rows);
       if (result.rows.length > 0) {
         const user = result.rows[0];
 
         bcrypt.compare(password, user.password, (err, match) => {
           if (match) {
-            // studentName = user.first_name + " " + user.last_name;
-            // clientUsername = username;
-            res.json({ success: true, message: "Login successful"});
-            console.log("worked")
+            res.json({ success: true, username: username, name: result.rows[0].first_name + " " + result.rows[0].last_name, assigned: result.rows[0].assigned});
           } else {
             res.status(401).send("Invalid credentials");
           }
