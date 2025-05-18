@@ -2,8 +2,14 @@ import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
 import bcrypt from "bcrypt";
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 import env from "dotenv";
 import { name } from "ejs";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3000;
@@ -13,28 +19,39 @@ let teacherName = "";
 let studentName = "";
 let clientUsername = "";
 
+// app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'views'));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json())
+app.use(express.static(path.join(__dirname, 'Invent copy')));
 
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "postgres",
-  password: "Willie_123!",
+  password: "aayan",
   port: 5432,
 });
 db.connect();
 
-app.get("/", (req, res) => {
-  res.render("home.ejs");
+app.get('/', (req, res) => {
+  res.render('home.ejs');
 });
+
+app.get("/", (req, res) => {
+  res.fil===
+})
 
 //TEACHER REGISTER AND POST
 app.post("/teacher/register", async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   const name = req.body.name;
+
+  console.log(username, password, name);
+
   const hashedPassword = await bcrypt.hash(password, saltRounds);
   const query = `INSERT INTO teacherusers (username, password, name, assigned) VALUES ($1, $2, $3, $4)`;
   const values = [username, hashedPassword, name, "0,0"];
@@ -64,6 +81,9 @@ app.get("/teacher/login", (req, res) => {
 app.post("/teacher/login", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
+
+  console.log("TEACHER");
+  console.log(username, password);
 
   const query = `SELECT * FROM teacherusers WHERE username = $1`;
   const values = [username];
@@ -99,6 +119,7 @@ app.get("/student/login", (req, res) => {
 app.post("/student/login", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
+  console.log(username, password);
   const query = `SELECT * FROM studentusers WHERE username = $1`;
   const values = [username];
   console.log(username, password);
@@ -113,6 +134,7 @@ app.post("/student/login", (req, res) => {
           if (match) {
             studentName = user.first_name + " " + user.last_name;
             clientUsername = username;
+            console.log("hello");
             res.redirect("/student/dashboard");
           } else {
             res.status(401).send("Invalid credentials");
@@ -192,6 +214,7 @@ app.get("/teacher/dashboard", async (req, res) => {
 //STUDENT DASHBOARD
 app.get("/student/dashboard", async (req, res) => {
   const result = await checkIfStudentJoinedClass();
+  console.log(result);
   if (result) {
     let query = "SELECT class_code FROM studentusers WHERE username = $1";
     let values = [clientUsername];
@@ -204,7 +227,7 @@ app.get("/student/dashboard", async (req, res) => {
     res.render("studentDashboard.ejs", { studentN: studentName, teacherN: nameResult.rows[0].name });
   }
   else {
-    res.render("studentDashboardCode.ejs", { studentN: studentName });
+    res.render("studentDashboardCode.ejs", { studentN: "studentName" });
   }
 });
 
