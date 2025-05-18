@@ -158,16 +158,29 @@ app.get("/student/register", (req, res) => {
 app.get("/teacher/dashboard", async (req, res) => {
   const result = await checkIfTeacherCreatedClass();
   if (result) {
-    let querry = "SELECT class_code FROM teacherusers WHERE username = $1";
+    let query = "SELECT class_code FROM teacherusers WHERE username = $1";
     let values = [clientUsername];
-    let classCodeResult = await db.query(querry, values);
+    let classCodeResult = await db.query(query, values);
 
-    querry = "SELECT (first_name, last_name) FROM studentusers WHERE class_code = $1";
+    query = "SELECT (first_name, last_name) FROM studentusers WHERE class_code = $1";
     values = [classCodeResult.rows[0].class_code];
 
-    let studentNameResult = await db.query(querry, values);
+    let studentNameResult = await db.query(query, values);
+    console.log("------------------------------------");
+    console.log(studentNameResult.rows);
+    console.log("---------------------------------");
 
-    res.render("teacherDashboard.ejs", { teacherN: teacherName, teacherClassCode: classCodeResult.rows[0].class_code, students: studentNameResult.rows});
+    query = "SELECT assigned FROM teacherusers WHERE username = $1";
+    values = [clientUsername];
+    "1,23,3"
+    const assignmentsResult = await db.query(query, values);
+    console.log(assignmentsResult);
+    const intArray = assignmentsResult.rows[0].assigned.split(',').map(value => {
+      return parseInt(value);
+    }
+    );
+    console.log(intArray);
+    res.render("teacherDashboard.ejs", { teacherN: teacherName, teacherClassCode: classCodeResult.rows[0].class_code, students: studentNameResult.rows, numProj: intArray[0], numEPE: intArray[1] });
   }
   else {
     //if techer hasn't generated a class code yet
@@ -179,14 +192,14 @@ app.get("/teacher/dashboard", async (req, res) => {
 app.get("/student/dashboard", async (req, res) => {
   const result = await checkIfStudentJoinedClass();
   if (result) {
-    let querry = "SELECT class_code FROM studentusers WHERE username = $1";
+    let query = "SELECT class_code FROM studentusers WHERE username = $1";
     let values = [clientUsername];
-    let databaseResult = await db.query(querry, [clientUsername]);
+    let databaseResult = await db.query(query, [clientUsername]);
     let studentEnteredClassCode = databaseResult.rows[0].class_code;
 
-    querry = "SELECT name FROM teacherusers WHERE class_code = $1";
+    query = "SELECT name FROM teacherusers WHERE class_code = $1";
     values = [studentEnteredClassCode];
-    const nameResult = await db.query(querry, values);
+    const nameResult = await db.query(query, values);
     res.render("studentDashboard.ejs", { studentN: studentName, teacherN: nameResult.rows[0].name });
   }
   else {
@@ -261,6 +274,39 @@ async function checkIfStudentJoinedClass() {
   }
   return false;
 }
+
+app.post("/teacher/updateAssignments" , async (req, res) => {
+  // const assignment = req.body.assignment;
+  // const query = "UPDATE teacherusers SET assignments = $1 WHERE username = $2";
+  // const values = [assignment, clientUsername];
+
+  const projQuestions = req.body.projAssign;
+  const epeQuestions = req.body.epeAssign;
+  console.log("body", req.body);
+  const query = "UPDATE teacherusers SET assigned = $1 WHERE username = $2";
+  const values = [projQuestions+","+epeQuestions, clientUsername];
+
+  db.query(query, values, (err, result) => {
+    if (err) {
+      console.error("Error inserting data:", err);
+      res.status(500).send("Error inserting data.");
+    } else {
+      console.log("Data inserted successfully");
+    }
+  })
+
+  res.redirect("/teacher/dashboard");
+
+  // await db.query(query, values, (err, result) => {
+  //   if (err) {
+  //     console.error("Error inserting data:", err);
+  //     res.status(500).send("Error inserting data.");
+  //   } else {
+  //     console.log("Data inserted successfully");
+  //     res.redirect("/teacher/dashboard");
+  //   }
+  // });
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
